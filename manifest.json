@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "XMR.PT",
+  "description": "This extension is a interface with the pool.xmr.pt",
+  "version": "0.3.1",
+
+  "browser_action": {
+    "default_icon": "moneroicon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+	"https://blockchain.info/ticker"
+  ]
+}

@@ -1,0 +1,107 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>XMR.PT Monero Pool</title>
+    <style type="text/css">
+      body {
+        margin: 10px;
+        white-space: nowrap;
+      }
+body {
+    background-color: #ffc299;
+}
+	  
+      h1 {
+        font-size: 15px;
+      }
+
+      #container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+    -->
+	
+   <script src="popup.js"></script>
+   <script src="btc-ticker.js"></script>
+      <script src="poolstats.js"></script>
+	  <script src="xmr-ticker.js"></script>
+  </head>
+<style>
+.vertical-menu {
+    width: 200px;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+</style>
+  <body>
+  <b>Monero and Crypto Currencies Stats</b>
+  <!--  <h3>Monero Pool</h3> -->
+  <div>
+	    <marquee behavior="scroll" direction="left" 
+        onmouseover="this.stop();" 
+        onmouseout="this.start();">
+		</div>
+
+<table>
+<tr>
+<td>
+<div id="quote-xmr">XMR/USD: </div>
+</td>
+<td>
+<div id="quote-btc">BTC/USD: </div>
+</td>
+</tr>
+</table>
+
+    </marquee>
+	<br>
+  <b>Monero Pools Stats</b>
+  <p id="poolstats">Miners: </p>
+  <br>
+	<div class="horizontal-menu">
+ <font size="-3">
+  <a href="https://pool.xmr.pt/#/home" target="_blank" class="active">Xmr.pt</a>
+  <a href="https://pool.xmr.pt/#/dashboard" target="_blank" >Dashboard</a>
+  <a href="https://pool.xmr.pt/#/blocks" target="_blank" >Blocks</a>
+  <a href="https://pool.xmr.pt/#/payments" target="_blank" >Payments</a>
+  <a href="https://pool.xmr.pt/#/ports" target="_blank" >Ports</a>
+    <a href="https://pool.xmr.pt/#/help/chat" target="_blank" >Chat</a>
+	  <a href="https://pool.xmr.pt/#/help/getting_started" target="_blank" >Getting Started</a>
+	    <a href="https://pool.xmr.pt/#/help/faq" target="_blank" >FAQ</a>
+		</font>
+</div>
+
+
+  </body>
+</html>
