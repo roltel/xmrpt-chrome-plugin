@@ -1,8 +1,8 @@
 # xmrpt-chrome-plugin
 XMR.PT Chrome Plugin
-
 This Plug-in is able to deploy a fast interface with monero pool and XMR data quotes.
 
+Download: https://chrome.google.com/webstore/detail/xmrpt/eigblbgjknlfbajkfhopmcojidlgcehm
 # Tools
 ## Pools Stats:
 Display xmr.pt pool stats inside the chrome plugin popup window.
